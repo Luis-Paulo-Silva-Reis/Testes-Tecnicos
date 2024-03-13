@@ -7,7 +7,7 @@ const fs = require('fs');
 
 const options = {
   key: fs.readFileSync('../../../../chave-privada.key'),
-  cert: fs.readFileSync('../../../certificado.crt')
+  cert: fs.readFileSync('../../../../certificado.crt')
 };
 
 const server = https.createServer(options, app);
