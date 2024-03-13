@@ -37,7 +37,7 @@ Entrega:
 
 O Figma:
 
-![Descrição da imagem](Toolzz/teste-tecnico-front-toolzz/src/assets/figma.png)
+![Descrição da imagem](teste-tecnico-front-toolzz/src/assets/figma.png)
 
 ## Funcionalidades Principais
 
