@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "http://$1",
+      "status": 307
+    }
+  ]
+}
