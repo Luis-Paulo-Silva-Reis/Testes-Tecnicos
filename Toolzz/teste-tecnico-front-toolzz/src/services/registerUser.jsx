@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const registerUser = async (email, password, setMessage) => {
   try {
-    const response = await axios.post("http://20.206.205.50:3000/register", { // se for testar local troca o ip por localhost
+    const response = await axios.post("https://20.206.205.50:3000/register", { // se for testar local troca o ip por localhost
       email,
       password,
     });
