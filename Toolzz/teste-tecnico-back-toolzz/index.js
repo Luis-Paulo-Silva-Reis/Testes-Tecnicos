@@ -2,21 +2,15 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const sqlite3 = require('sqlite3').verbose();
-const https = require('https');
-const fs = require('fs');
 
-const app = express(); 
+const app = express();
+const PORT = process.env.PORT || 3000; // Correção na definição da porta
 
 // Middleware para permitir o parse do corpo das requisições
 app.use(bodyParser.json());
 
 // Middleware para configurar o CORS
 app.use(cors());
-
-
-
-
-const PORT = process.env.PORT || 3000; // Correção na definição da porta
 
 app.post('/login', (req, res) => {
   const { email, password } = req.body;
@@ -93,7 +87,9 @@ app.post('/register', (req, res) => {
   db.close();
 });
 
+
+
 // Inicia o servidor
 app.listen(PORT, () => {
-  console.log(`Servidor HTTPS rodando na porta ${PORT}`);
+  console.log(`Servidor rodando na porta ${PORT}`);
 });
