@@ -12,16 +12,16 @@ app.use(bodyParser.json());
 
 // Middleware para configurar o CORS
 app.use(cors());
+
+const server = https.createServer(options, app);
+
 const options = {
   key: fs.readFileSync('../../../../chave-privada.key'),
   cert: fs.readFileSync('../../../../certificado.crt')
 };
 
-const server = https.createServer(options, app);
 
 const PORT = process.env.PORT || 3000; // Correção na definição da porta
-
-
 
 app.post('/login', (req, res) => {
   const { email, password } = req.body;
