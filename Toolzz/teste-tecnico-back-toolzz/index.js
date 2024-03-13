@@ -5,14 +5,10 @@ const sqlite3 = require('sqlite3').verbose();
 const https = require('https');
 const fs = require('fs');
 
-const options = {
-  key: fs.readFileSync('../../../../chave-privada.key'),
-  cert: fs.readFileSync('../../../../certificado.crt')
-};
 
-const server = https.createServer(options, app);
 
-const app = express();
+
+
 const PORT = process.env.PORT || 3000; // Correção na definição da porta
 
 // Middleware para permitir o parse do corpo das requisições
@@ -96,7 +92,15 @@ app.post('/register', (req, res) => {
   db.close();
 });
 
+const app = express();
 
+
+const options = {
+  key: fs.readFileSync('../../../../chave-privada.key'),
+  cert: fs.readFileSync('../../../../certificado.crt')
+};
+
+const server = https.createServer(options, app);
 
 // Inicia o servidor
 server.listen(PORT, () => {
