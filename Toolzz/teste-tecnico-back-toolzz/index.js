@@ -5,9 +5,7 @@ const sqlite3 = require('sqlite3').verbose();
 const https = require('https');
 const fs = require('fs');
 
-
-
-
+const app = express(); // Definir o aplicativo Express aqui
 
 const PORT = process.env.PORT || 3000; // Correção na definição da porta
 
@@ -91,9 +89,6 @@ app.post('/register', (req, res) => {
 
   db.close();
 });
-
-const app = express();
-
 
 const options = {
   key: fs.readFileSync('../../../../chave-privada.key'),
