@@ -1,0 +1,372 @@
+.LoginPageWithoutBanner-container-darkMode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  align-self: stretch;
+  background-color: #232323;
+}
+
+.LoginPageWithoutBanner-container-master-darkMode {
+  width: 40rem;
+  padding: 1.5rem;
+  background-color: #232323;
+}
+
+.LoginPageWithoutBanner-form {
+  display: flex;
+  padding: 0rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 0;
+  flex-direction: column;
+  padding-top: 0px;
+}
+
+.LoginPageWithoutBanner-logo-login-account {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.LoginPageWithoutBanner-wellcome-darkMode {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.LoginPageWithoutBanner-wellcome-darkMode h2 {
+  color: #ededed;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  margin: 0;
+}
+
+.LoginPageWithoutBanner-wellcome-darkMode h5 {
+  color: #ededed;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  margin: 0;
+}
+
+.LoginPageWithoutBanner-social-login-darkMode {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.LoginPageWithoutBanner-social-login-darkMode button {
+  background: none;
+  display: flex;
+  height: 48px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  border-radius: 8px;
+  border: 1px solid #f5f5f5;
+}
+
+.LoginPageWithoutBanner-or-div-darkMode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.LoginPageWithoutBanner-or-div-darkMode p {
+  padding: 24px 16px;
+  margin: -8px;
+  color: #909090;
+}
+
+.horizontal-line {
+  width: 100%;
+  height: 1px;
+  background: #585858;
+  border: none;
+  margin: 0;
+}
+
+.LoginPageWithoutBanner-form-theForm-darkMode {
+  width: 100%;
+
+  padding: 1.5rem;
+}
+
+.error-message {
+  color: #ffffff;
+}
+
+.LoginPageWithoutBanner-form-theForm-darkMode label {
+  color: #ededed;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.LoginPageWithoutBanner-form-theForm-darkMode-userIcon {
+  position: relative;
+  top: 3rem;
+  left: -2.8rem;
+}
+
+.LoginPageWithoutBanner-form-theForm-darkMode-lockIcon {
+  position: relative;
+  top: 3rem;
+  left: -2rem;
+}
+
+.LoginPageWithoutBanner-form-theForm-darkMode input {
+  padding-left: 3rem; /* Adiciona espaço para o ícone */
+}
+
+.LoginPageWithoutBanner-form-theForm-darkMode input[type="text"] {
+  width: -webkit-fill-available;
+  display: flex;
+  justify-content: flex-start;
+  height: 48px;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid #6a6a6a;
+  margin-top: 8px;
+}
+
+.LoginPageWithoutBanner-form-theForm-darkMode input[type="text"]:hover {
+  border-color: #0d99ff;
+}
+
+.LoginPageWithoutBanner-form-theForm-darkMode input[type="text"]::placeholder {
+  position: relative;
+  left: 0rem;
+}
+
+.LoginPageWithoutBanner-form-theForm-darkMode div:nth-child(2) {
+  padding-top: 24px;
+}
+
+.LoginPageWithoutBanner-form-theForm-darkMode input[type="password"] {
+  width: 100%;
+  width: -webkit-fill-available;
+  display: flex;
+  justify-content: flex-start;
+  height: 48px;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid #6a6a6a;
+  margin-top: 8px;
+}
+
+.LoginPageWithoutBanner-form-theForm-darkMode input[type="password"]:hover {
+  border-color: #0d99ff;
+}
+
+.LoginPageWithoutBanner-form-theForm-darkMode
+  input[type="password"]::placeholder {
+  position: relative;
+  left: 0rem;
+}
+
+.LoginPageWithoutBanner-form-theForm-darkMode div:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 24px 24px 24px -0px;
+}
+
+.LoginPageWithoutBanner-form-theForm-darkMode div:nth-child(3) label {
+  color: #ededed;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.LoginPageWithoutBanner-form-theForm-darkMode input[type="checkbox"] {
+  display: flex;
+  padding: 24px 24px 24px 24px;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.h-captcha {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.LoginPageWithoutBanner-form-theForm-darkMode button:last-child {
+  width: 100%;
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  flex: 1 0 0;
+  border-radius: 8px;
+  background: #0761e2;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  margin-top: 24px;
+}
+
+.LoginPageWithoutBanner-form-theForm-darkMode button:last-child h5 {
+  color: #fff;
+
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.LoginPageWithoutBanner-form-theForm-darkMode button:last-child img {
+  width: 18px;
+  height: 22px;
+}
+
+.LoginPageWithoutBanner-form-forgot-password {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginPageWithoutBanner-form-forgot-password p {
+  color: #909090;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.LoginPageWithoutBanner-form-forgot-password a {
+  color: #0761e2;
+
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.LoginPageWithoutBanner-Navbar {
+  display: none;
+}
+
+.useful-display {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .LoginPageWithoutBanner-container-master-darkMode {
+    width: 100%;
+    background-color: #232323;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .LoginPageWithoutBanner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #232323;
+    padding: 0px 1.5rem;
+  }
+
+  .LoginPageWithoutBanner-Navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    align-items: center;
+    border-bottom: 1px solid #000000, rgba(0, 0, 0, 0.1);
+  }
+
+  .LoginPageWithoutBanner-form {
+    width: 100%;
+  }
+
+  .useful-display-none {
+    display: none;
+  }
+
+  .LoginPageWithoutBanner-banner-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 9999px;
+    border: 1px solid #000000;
+    background: none;
+  }
+
+  .LoginPageWithoutBanner-banner-arrow-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+  }
+
+  .LoginPageWithoutBanner-social-login button {
+    gap: 0px;
+  }
+
+  .LoginPageWithoutBanner-form-forgot-password p > a {
+    color: #ededed;
+  }
+  .LoginPageWithoutBanner-form-forgot-password p {
+    color: #909090;
+  }
+
+  .LoginPageWithoutBanner-form-theForm-darkMode input[type="checkbox"] {
+    display: none;
+  }
+
+  .LoginPageWithoutBanner-form-theForm-darkMode input[type="checkbox"] {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: none;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 2px solid #6a6a6a;
+  }
+
+  .LoginPageWithoutBanner-form-theForm-darkMode
+    input[type="checkbox"]:checked
+    + label {
+    border-color: #007bff;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .LoginPageWithoutBanner-social-login {
+    gap: 0.5rem;
+  }
+}

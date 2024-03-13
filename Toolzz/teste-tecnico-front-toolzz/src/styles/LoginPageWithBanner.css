@@ -1,0 +1,311 @@
+.LoginPageWithBanner-container {
+  display: flex;
+}
+
+.LoginPageWithBanner-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 80px 56px;
+  gap: 500px;
+  max-width: 60%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%),
+    url("../assets/MenWithYourLaptop.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.LoginPageWithBanner-banner-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 9999px;
+  border: 1px solid #ffffff;
+  background: none;
+}
+
+.LoginPageWithBanner-banner-arrow-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.container-master {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.LoginPageWithBanner-form {
+  display: flex;
+  padding: 0rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 0;
+  flex-direction: column;
+  padding-top: 0px;
+}
+
+.LoginPageWithBanner-logo-login-account {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.LoginPageWithBanner-wellcome {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.LoginPageWithBanner-wellcome h2 {
+  color: #0e0e0e;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  margin: 0;
+}
+
+.LoginPageWithBanner-wellcome h5 {
+  color: #585858;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  margin: 0;
+  margin-top: 16px;
+}
+
+.LoginPageWithBanner-social-login {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.LoginPageWithBanner-social-login button {
+  background: none;
+  display: flex;
+  height: 48px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  border-radius: 8px;
+  border: 1px solid #151515;
+}
+
+.LoginPageWithBanner-or-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.LoginPageWithBanner-or-div p {
+  padding: 24px 16px;
+  margin: -8px;
+}
+
+.horizontal-line {
+  width: 100%;
+  height: 1px;
+  background: #585858;
+  border: none;
+  margin: 0;
+}
+
+.LoginPageWithBanner-form-theForm {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.LoginPageWithBanner-form-theForm label {
+  color: #0e0e0e;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.LoginPageWithBanner-form-theForm-userIcon {
+  position: relative;
+  top: 3rem;
+  left: -2.8rem;
+}
+
+.LoginPageWithBanner-form-theForm-lockIcon {
+  position: relative;
+  top: 3rem;
+  left: -2rem;
+}
+
+.LoginPageWithBanner-form-theForm input {
+  padding-left: 3rem; /* Adiciona espaço para o ícone */
+}
+
+.LoginPageWithBanner-form-theForm input[type="text"] {
+  width: -webkit-fill-available;
+  display: flex;
+  justify-content: flex-start;
+  height: 48px;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid #6a6a6a;
+  margin-top: 8px;
+}
+
+.LoginPageWithBanner-form-theForm input[type="text"]:hover {
+  border-color: #0d99ff;
+}
+
+.LoginPageWithBanner-form-theForm input[type="text"]::placeholder {
+  position: relative;
+  left: 0rem;
+}
+
+.LoginPageWithBanner-form-theForm input[type="password"] {
+  width: -webkit-fill-available;
+  display: flex;
+  justify-content: flex-start;
+  height: 48px;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid #6a6a6a;
+  margin-top: 8px;
+}
+
+.LoginPageWithBanner-form-theForm input[type="password"]:hover {
+  border-color: #0d99ff;
+}
+
+.LoginPageWithBanner-form-theForm input[type="password"]::placeholder {
+  position: relative;
+  left: 0rem;
+}
+
+.LoginPageWithBanner-form-theForm div:nth-child(2) {
+  padding-top: 24px;
+}
+
+.LoginPageWithBanner-form-theForm div:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 24px 24px 24px -0px;
+}
+
+.LoginPageWithBanner-form-theForm div:nth-child(3) label {
+  color: var#0e0e0e;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.LoginPageWithBanner-form-theForm input[type="checkbox"] {
+  display: flex;
+  padding: 24px 24px 24px 24px;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  width: 20px;
+  height: 20px;
+}
+
+.h-captcha {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.LoginPageWithBanner-form-theForm button:last-child {
+  width: 100%;
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  flex: 1 0 0;
+  border-radius: 8px;
+  background: #0761e2;
+  /*padding: 1.5rem;*/
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  margin-top: 24px;
+}
+
+.LoginPageWithBanner-form-theForm button:last-child h5 {
+  color: #fff;
+
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.LoginPageWithBanner-form-theForm button:last-child img {
+  width: 18px;
+  height: 22px;
+}
+
+.LoginPageWithBanner-form-forgot-password {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginPageWithBanner-form-forgot-password p {
+  color: #585858;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.LoginPageWithBanner-form-forgot-password a {
+  color: #0761e2;
+
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.LoginPageWithBanner-form-alert-message p {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1280px) {
+  .LoginPageWithBanner-container {
+    flex-direction: column;
+  }
+
+  .LoginPageWithBanner-banner {
+    max-width: none;
+  }
+
+  .container-master {
+    padding: 0;
+  }
+}

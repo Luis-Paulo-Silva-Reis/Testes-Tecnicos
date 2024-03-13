@@ -1,0 +1,132 @@
+.carousel-items h3 {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.carousel-items h4 {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #909090;
+}
+
+.carousel-items p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 78px;
+  height: 32px;
+  padding: 8px, 12px, 8px, 12px;
+  border-radius: 9999px;
+  gap: 8px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  background-color: #0761e2;
+  color: #ffffff;
+}
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.carousel-controlers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  justify-content: space-between;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.carousel-items {
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.indicators {
+  left: 10px;
+  top: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.indicator {
+  width: 96px;
+  height: 4px;
+  background-image: url("../assets/icons/Rectangle.svg");
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-image: url("../assets/icons/activeRectangle.svg");
+}
+
+.prev,
+.next {
+  top: 50%;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button.next:focus {
+  outline: none;
+}
+
+button.next:focus {
+  outline: none;
+}
+
+button.prev:focus {
+  outline: none;
+}
+
+button.prev:focus {
+  outline: none;
+}
+
+.prev img,
+.next img {
+  width: 30px;
+  height: 30px;
+}
+
+.prev {
+  left: -40px;
+}
+
+.next {
+  right: -40px;
+}
+
+
+@media screen and (max-width: 1280px) {}
