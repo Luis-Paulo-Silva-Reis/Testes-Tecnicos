@@ -99,6 +99,6 @@ app.post('/register', (req, res) => {
 
 
 // Inicia o servidor
-app.listen(PORT, () => {
-  console.log(`Servidor rodando na porta ${PORT}`);
+server.listen(PORT, () => {
+  console.log(`Servidor HTTPS rodando na porta ${PORT}`);
 });
