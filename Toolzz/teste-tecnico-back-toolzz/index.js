@@ -2,6 +2,15 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const sqlite3 = require('sqlite3').verbose();
+const https = require('https');
+const fs = require('fs');
+
+const options = {
+  key: fs.readFileSync('../../../../chave-privada.key'),
+  cert: fs.readFileSync('../../../certificado.crt')
+};
+
+const server = https.createServer(options, app);
 
 const app = express();
 const PORT = process.env.PORT || 3000; // Correção na definição da porta
