@@ -1,5 +1,6 @@
 import "../styles/HomePage.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import { registerUser } from "../services/registerUser";
 
@@ -17,25 +18,26 @@ function HomePage() {
     <div className="HomePage">
       <h1 className="title">Desafio Toolzz</h1>
       <div className="links">
+        {/* Substitua as tags <a> por <Link> */}
         <button>
-          <a href="/WithBanner" className="link">
+          <Link to="/WithBanner" className="link">
             Página de login com banner lateral esquerdo
-          </a>
+          </Link>
         </button>
         <button>
-          <a href="/WithoutBanner" className="link">
+          <Link to="/WithoutBanner" className="link">
             Página de login sem banner
-          </a>
+          </Link>
         </button>
         <button>
-          <a href="/WithBannerDarkMode" className="link">
+          <Link to="/WithBannerDarkMode" className="link">
             Página de login com banner lateral esquerdo dark mode
-          </a>
+          </Link>
         </button>
         <button>
-          <a href="/WithoutBannerDarkMode" className="link">
+          <Link to="/WithoutBannerDarkMode" className="link">
             Página de login sem banner dark mode
-          </a>
+          </Link>
         </button>
       </div>
 
