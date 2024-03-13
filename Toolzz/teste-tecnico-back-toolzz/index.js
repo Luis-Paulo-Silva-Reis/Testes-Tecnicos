@@ -13,12 +13,7 @@ app.use(bodyParser.json());
 // Middleware para configurar o CORS
 app.use(cors());
 
-const server = https.createServer(options, app);
 
-const options = {
-  key: fs.readFileSync('../../../../chave-privada.key'),
-  cert: fs.readFileSync('../../../../certificado.crt')
-};
 
 
 const PORT = process.env.PORT || 3000; // Correção na definição da porta
@@ -99,6 +94,6 @@ app.post('/register', (req, res) => {
 });
 
 // Inicia o servidor
-server.listen(PORT, () => {
+app.listen(PORT, () => {
   console.log(`Servidor HTTPS rodando na porta ${PORT}`);
 });
