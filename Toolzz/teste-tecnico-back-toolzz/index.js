@@ -6,6 +6,12 @@ const https = require('https');
 const fs = require('fs');
 
 const app = express(); // Definir o aplicativo Express aqui
+const options = {
+  key: fs.readFileSync('../../../../chave-privada.key'),
+  cert: fs.readFileSync('../../../../certificado.crt')
+};
+
+const server = https.createServer(options, app);
 
 const PORT = process.env.PORT || 3000; // Correção na definição da porta
 
@@ -90,12 +96,7 @@ app.post('/register', (req, res) => {
   db.close();
 });
 
-const options = {
-  key: fs.readFileSync('../../../../chave-privada.key'),
-  cert: fs.readFileSync('../../../../certificado.crt')
-};
 
-const server = https.createServer(options, app);
 
 // Inicia o servidor
 server.listen(PORT, () => {
