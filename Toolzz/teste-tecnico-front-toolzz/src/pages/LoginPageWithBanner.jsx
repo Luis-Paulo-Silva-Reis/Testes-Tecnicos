@@ -21,23 +21,17 @@ import Carousel from "../components/Carousel";
 
 import { handleLogin } from "../services/handleLogin";
 
-// eslint-disable-next-line react/prop-types
 function LoginPageWithBanner() {
   const [email, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
-  // eslint-disable-next-line no-unused-vars
   const [message, setMessage] = useState("");
-
-  // eslint-disable-next-line no-unused-vars
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Aqui você pode adicionar a lógica para fazer a autenticação diretamente
     console.log("Email:", email);
     console.log("Password:", password);
     console.log("Remember Me:", rememberMe);
-    // eslint-disable-next-line no-undef
     await handleLogin(email, password, setMessage);
   };
 

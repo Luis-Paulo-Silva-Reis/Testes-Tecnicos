@@ -18,7 +18,6 @@ function HomePage() {
     <div className="HomePage">
       <h1 className="title">Desafio Toolzz</h1>
       <div className="links">
-        {/* Substitua as tags <a> por <Link> */}
         <button>
           <Link to="/WithBanner" className="link">
             Página de login com banner lateral esquerdo

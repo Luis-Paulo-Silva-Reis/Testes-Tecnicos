@@ -1,4 +1,3 @@
-//handleLogin.jsx
 import axios from "axios";
 
 

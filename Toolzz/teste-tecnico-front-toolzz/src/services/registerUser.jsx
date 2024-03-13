@@ -1,4 +1,3 @@
-// apiService.js
 import axios from "axios";
 
 export const registerUser = async (email, password, setMessage) => {
