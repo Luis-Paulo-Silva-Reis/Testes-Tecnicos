@@ -49,7 +49,7 @@ O Figma:
 
 ## Confira o resultado
 
-[Link para a aplicação ao vivo](https://testes-tecnicos-toolzz.vercel.app/)
+[Link para a aplicação ao vivo](https://testestecnicos-toolzz.vercel.app/)
 
 ## Configuração do Ambiente local
 
