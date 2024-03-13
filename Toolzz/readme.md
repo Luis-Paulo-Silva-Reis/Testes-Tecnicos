@@ -51,6 +51,8 @@ O Figma:
 
 [Link para a aplicação ao vivo](http://20.206.205.50:8080/)
 
+Tanto o back-end quanto o front-end estão rodando em uma VM minha da Azure. Eu pensei em usar a Vercel, porém não estão permitindo requisições HTTP, e como é só um teste, não vejo problemas em estar em uma VM e a URL ser o IP. Até mesmo é mais difícil fazer esse deploy! Hahaha.
+
 ## Configuração do Ambiente local
 
 Para configurar o ambiente de desenvolvimento localmente, siga estas etapas:
@@ -66,6 +68,8 @@ Para configurar o ambiente de desenvolvimento localmente, siga estas etapas:
 9. **Acesse o aplicativo**: Abra seu navegador e acesse `http://localhost:5173` para visualizar o aplicativo em execução.
 
 ## Teste do backend
+
+Caso queria testar usar local você precisa trocar a url dos services do front do ip para local host, esta comentado no codigo, e facil de entender onde esta, esta cometado la também.
 
 Caso você queira testar o backend via Postman, na pasta do backend eu deixei uma coleção para você importar.
 
