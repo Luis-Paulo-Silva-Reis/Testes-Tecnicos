@@ -1,9 +1,11 @@
 //handleLogin.jsx
 import axios from "axios";
 
+
 export const handleLogin = async (email, password, setMessage) => {
   try {
-    const response = await axios.post("https://20.206.205.50:3000/login", { // se for testar local troca o ip por localhost
+    const response = await axios.post("https://20.206.205.50:3000/login", {
+      // se for testar local troca o ip por localhost
       email,
       password,
     });

@@ -1,6 +1,4 @@
 const express = require('express');
-const https = require('https');
-const fs = require('fs');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const sqlite3 = require('sqlite3').verbose();
@@ -13,13 +11,6 @@ app.use(bodyParser.json());
 
 // Middleware para configurar o CORS
 app.use(cors());
-
-const options = {
-  key: fs.readFileSync('../../../../chave-privada.key'),
-  cert: fs.readFileSync('../../../../certificado.crt')
-};
-
-
 
 app.post('/login', (req, res) => {
   const { email, password } = req.body;
@@ -96,8 +87,9 @@ app.post('/register', (req, res) => {
   db.close();
 });
 
-const server = https.createServer(options, app);
 
-server.listen(PORT, () => {
-  console.log(`Servidor HTTPS rodando na porta ${PORT}`);
+
+// Inicia o servidor
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
 });
