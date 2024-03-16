@@ -11,7 +11,7 @@ import Twitter from "../assets/icons/TwitterDark.svg";
 import TwitterHover from "../assets/icons/TwitterHover.svg";
 import TzLogo from "../assets/icons/TZ-LogoForDarkVersion.svg";
 import hoverArrowLeft from "../assets/icons/arrow-left-hover.svg";
-import mobilelArrowLeft from "../assets/icons/mobileArrow-left.svg";
+import mobilelArrowLeft from "../assets/icons/mobileArrow-leftWhite.svg";
 import signInIcon from "../assets/icons/signInIcon.svg";
 import lock from "../assets/icons/lock.svg";
 import user from "../assets/icons/user.svg";
@@ -40,7 +40,7 @@ function LoginPageWithoutBanner() {
               <ButtonWithHover
                 defaultImage={mobilelArrowLeft}
                 hoverImage={hoverArrowLeft}
-                class1={"LoginPageWithoutBanner-banner-button"}
+                class1={"LoginPageWithoutBanner-banner-button-darkMode"}
                 class2={"LoginPageWithoutBanner-banner-arrow-img"}
                 href="/"
               />
